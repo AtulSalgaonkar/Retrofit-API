@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Retrofit API</string>
+    <string name="original_title">Original Title:</string>
+    <string name="released_date">Released Date:</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="subtitle">subtitle</string>
+    <string name="movie_poster">Movie Poster</string>
+</resources>
