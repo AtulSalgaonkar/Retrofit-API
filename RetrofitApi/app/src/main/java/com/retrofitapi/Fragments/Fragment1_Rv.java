@@ -46,7 +46,7 @@ public class Fragment1_Rv extends Fragment {
         if (view != null) {
             mRecyclerView = view.findViewById(R.id.reyclerview_display_data);
 
-            setRelativeData(view);
+            setRelativeData();
 
             //mRecyclerViewAdapter = new MyRvAdapter(getData());
             //mRecyclerView.setAdapter(mRecyclerViewAdapter);
@@ -57,7 +57,7 @@ public class Fragment1_Rv extends Fragment {
         return view;
     }
 
-    private void setRelativeData(final View view) {
+    private void setRelativeData() {
 
         mApiInterfaceOfMovie = ApiClientOfMovie.getRetrofitInstanceOfMovieDb().create(ApiInterfaceOfMovie.class);
 
