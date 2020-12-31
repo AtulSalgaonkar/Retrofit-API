@@ -1,18 +1,17 @@
-package com.retrofitapi.RecyclerviewSetup;
+package com.retrofitapi.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.retrofitapi.Interfaces.OnMovieSelected;
-import com.retrofitapi.Required.HelperMethods;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.retrofitapi.R;
-import com.retrofitapi.Retrofit.PojoClass.Movie;
-import com.retrofitapi.Singleton.PreferenceHelper;
+import com.retrofitapi.service.model.Movie;
+import com.retrofitapi.utils.PreferenceHelper;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -96,5 +95,11 @@ public class MyRvAdapter extends RecyclerView.Adapter<MyRvAdapter.MyViewHolder> 
     public static void setOnMovieSelected(OnMovieSelected onMovieSelected) {
         mOnMovieSelected = onMovieSelected;
     }
+
+
+    public interface OnMovieSelected {
+        public void onMovieSelected(boolean isSelected);
+    }
+
 
 }

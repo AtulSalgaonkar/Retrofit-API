@@ -1,7 +1,7 @@
-package com.retrofitapi.Interfaces;
+package com.retrofitapi.service;
 
-import com.retrofitapi.Retrofit.PojoClass.MovieDetails;
-import com.retrofitapi.Retrofit.PojoClass.MovieResponse;
+import com.retrofitapi.service.model.MovieDetails;
+import com.retrofitapi.service.model.MovieResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

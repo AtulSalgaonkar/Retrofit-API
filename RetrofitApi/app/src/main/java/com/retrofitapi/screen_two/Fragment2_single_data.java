@@ -1,24 +1,21 @@
-package com.retrofitapi.Fragments;
+package com.retrofitapi.screen_two;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.retrofitapi.Interfaces.ApiInterfaceOfMovie;
-import com.retrofitapi.Interfaces.OnMovieSelected;
+import androidx.fragment.app.Fragment;
+
+import com.retrofitapi.service.ApiInterfaceOfMovie;
 import com.retrofitapi.R;
-import com.retrofitapi.RecyclerviewSetup.MyRvAdapter;
-import com.retrofitapi.Required.HelperMethods;
-import com.retrofitapi.Retrofit.PojoClass.Movie;
-import com.retrofitapi.Retrofit.PojoClass.MovieDetails;
-import com.retrofitapi.Singleton.ApiClientOfMovie;
-import com.retrofitapi.Singleton.PreferenceHelper;
+import com.retrofitapi.utils.HelperMethods;
+import com.retrofitapi.service.model.MovieDetails;
+import com.retrofitapi.service.ApiClientOfMovie;
+import com.retrofitapi.utils.PreferenceHelper;
 import com.squareup.picasso.Picasso;
 
 import retrofit2.Callback;

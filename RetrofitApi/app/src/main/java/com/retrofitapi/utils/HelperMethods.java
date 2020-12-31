@@ -1,11 +1,12 @@
-package com.retrofitapi.Required;
+package com.retrofitapi.utils;
 
 import android.content.Context;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Created on 30-01-2018.

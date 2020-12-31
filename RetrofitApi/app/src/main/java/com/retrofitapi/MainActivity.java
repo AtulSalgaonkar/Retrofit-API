@@ -1,24 +1,22 @@
-package com.retrofitapi.Activities;
+package com.retrofitapi;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.transition.Slide;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
-import android.view.Gravity;
 import android.widget.RelativeLayout;
 
-import com.retrofitapi.Fragments.Fragment1_Rv;
-import com.retrofitapi.Fragments.Fragment2_single_data;
-import com.retrofitapi.Interfaces.OnMovieSelected;
-import com.retrofitapi.R;
-import com.retrofitapi.RecyclerviewSetup.MyRvAdapter;
-import com.retrofitapi.Singleton.PreferenceHelper;
+import com.retrofitapi.screen_one.Fragment1_Rv;
+import com.retrofitapi.screen_two.Fragment2_single_data;
+import com.retrofitapi.adapter.MyRvAdapter;
+import com.retrofitapi.utils.PreferenceHelper;
 
-public class MainActivity extends AppCompatActivity implements OnMovieSelected {
+public class MainActivity extends AppCompatActivity implements MyRvAdapter.OnMovieSelected {
 
     private Fragment1_Rv mFragment1;
     private Fragment2_single_data mFragment2;

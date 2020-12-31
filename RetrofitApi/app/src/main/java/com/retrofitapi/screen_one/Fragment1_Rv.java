@@ -1,22 +1,23 @@
-package com.retrofitapi.Fragments;
+package com.retrofitapi.screen_one;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.retrofitapi.Required.HelperMethods;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.retrofitapi.utils.HelperMethods;
 import com.retrofitapi.R;
-import com.retrofitapi.RecyclerviewSetup.MyRvAdapter;
-import com.retrofitapi.Singleton.ApiClientOfMovie;
-import com.retrofitapi.Interfaces.ApiInterfaceOfMovie;
-import com.retrofitapi.Retrofit.PojoClass.Movie;
-import com.retrofitapi.Retrofit.PojoClass.MovieResponse;
+import com.retrofitapi.adapter.MyRvAdapter;
+import com.retrofitapi.service.ApiClientOfMovie;
+import com.retrofitapi.service.ApiInterfaceOfMovie;
+import com.retrofitapi.service.model.Movie;
+import com.retrofitapi.service.model.MovieResponse;
 
 import java.util.List;
 

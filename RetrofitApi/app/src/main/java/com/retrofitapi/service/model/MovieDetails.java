@@ -1,4 +1,4 @@
-package com.retrofitapi.Retrofit.PojoClass;
+package com.retrofitapi.service.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

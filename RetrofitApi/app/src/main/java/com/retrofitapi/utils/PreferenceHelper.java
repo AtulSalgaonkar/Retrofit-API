@@ -1,4 +1,4 @@
-package com.retrofitapi.Singleton;
+package com.retrofitapi.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
